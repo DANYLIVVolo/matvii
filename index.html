@@ -1,109 +1,181 @@
-/* Загальні стилі */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #1e1e1e;
-    color: #fff;
-}
-
-header {
-    background: #222;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-header h1 {
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-}
-
-.logo {
-    margin-right: 10px;
-    border-radius: 50%;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #f39c12;
-}
-
-/* Головний контент */
-main {
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
-}
-
-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-bottom: 40px;
-}
-
-article {
-    background: #333;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-article img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-button {
-    background: #f39c12;
-    border: none;
-    padding: 10px 15px;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-button:hover {
-    background: #e67e22;
-}
-
-/* Про нас */
-.about {
-    text-align: center;
-    padding: 20px;
-    background: #444;
-    border-radius: 10px;
-}
-
-/* Футер */
-footer {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    background: #222;
-}
-
-footer img {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s;
-}
-
-footer img:hover {
-    transform: scale(1.1);
-}
+<html>
+  <head>
+    <link rel="stylesheet" href="style.scc"/>
+    <title>Магазин ігор</title>
+  </head>
+ <body>
+    <header>
+      <h1>
+      <img class="logo" src="https://mezha.media/wp-content/uploads/2022/03/Jeux-video-Ubisoft-enquete-sur-des-allegations-de-violence-et-harcelement-sexuel-900x450.jpg" width="50px" height="50px"/>
+       Магазин <span> ігор </span> </h1>
+       <nav>
+         <a href=""> Головна </a>
+         <a href=""> Топ 5 продажів </a>
+         <a href=""> Ігри з найкращими оцінками </a>
+       </nav>
+    </header>
+    <main>
+     <section>
+      <article> 
+      <img class="game1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBYTY6fubCGS0hcxIc3_9jbG973emtsQ4vO42dAy1RO1WuuRCWSU_9fKzByCBYH69liRY&usqp=CAU"/>
+      <p>Call of Duty Black ops 6</p>
+      <p>ціна 3300грн</p>
+      <button>купити</button>
+      </article>
+      <article>
+      <img class="game2" src="https://cdn1.epicgames.com/b30b6d1b4dfd4dcc93b5490be5e094e5/offer/RDR2476298253_Epic_Games_Wishlist_RDR2_2560x1440_V01-2560x1440-2a9ebe1f7ee202102555be202d5632ec.jpg"/>
+      <p>Red Dead Redemption 2</p>
+      <p>ціна 2600грн</p>
+       <button>купити</button>
+      </article>
+      <article>
+      <img class="game3" src="https://i.ytimg.com/vi/5VP6bjlger8/maxresdefault.jpg"/>
+      <p>Kingdom Come Deliverance 2</p>
+      <p>ціна 1600грн</p>
+       <button>купити</button>
+      </article>
+      <article>
+      <img class="game4" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/756800/capsule_616x353.jpg?t=1738174673"/>
+      <p>contraband police</p>
+        <p>ціна 500грн</p>
+         <button>купити</button>
+        </article>
+        <article>
+        <img class="game5" src="https://upload.wikimedia.org/wikipedia/ru/0/0b/Call_Of_Duty_MW3_2023.jpg"/>
+        <p>Call of duty Modern Warfare 3</p>
+          <p>ціна 2449грн</p>
+           <button>купити</button>
+          </article>
+          <article>
+          <img class="game6" src="https://image.api.playstation.com/vulcan/ap/rnd/202103/1501/enihR6QwSYiWCNl2HdPfV6R6.png"/>
+           <p>rust</p>
+           <p>ціна 700грн</p>
+            <button>купити</button>
+           </article>
+           <article>
+            <img class="game7" src="https://cdn1.epicgames.com/offer/602a0ef0aceb46cca62445439661d712/EGS_STALKER2HeartofChornobyl_GSCGameWorld_S1_2560x1440-62f2f7def1bae0e3255e49fc7177adaf"/>
+            <p>S.T.A.L.K.E.R.2</p>
+            <p>1400грн</p>
+            <button>купити</button>
+            </article>
+            <article>
+              <img class="game8" src="https://upload.wikimedia.org/wikipedia/ru/c/c8/GTAV_Official_Cover_Art.jpg"/>
+              <p>GTA5</p>
+              <p>ціна 630грн</p>
+              <button>купити</button>
+            </article>
+            <article>
+              <img class="game9" src="https://image.api.playstation.com/vulcan/img/cfn/11307fsIYkqRw-ADaXO1FnCgSfZVE6l-w3v_eBSbkzS6ciOc_2g3k83Y9pYqb9YHAstXYNQ8Jk8K7xXn-GEYb-HovbEXcluR.png?w=440"/>
+              <p>Mafia 3</p>
+              <p>550грн</p>
+              <button>купити</button>
+            </article>
+            <article>
+              <img class="game10" src="https://upload.wikimedia.org/wikipedia/en/8/8d/Indiana_Jones_and_the_Great_Circle-box_art.jpg"/>
+              <p>Indiana jones and the great circle</p>
+              <p>ціна 2449</p>
+              <button>купити</button>
+            </article>
+            <article>
+            <img class="game11" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGY3No-tV96xn9VbM26wd92653ctV4EYGa7A&s"/>
+            <p>S.T.A.L.K.E.R. shadow of chernobyl</p>
+            <p>ціна 280грн</p>
+            <button>купити</button>
+            </article>
+            <article>
+              <img class="game12" src="https://upload.wikimedia.org/wikipedia/ru/d/dd/Grand_Theft_Auto_IV.jpg"/>
+              <p>GTA4</p>
+              <p>ціна 430грн</p>
+              <button>купити</button>
+              </article>
+              <article>
+                <img class="game13" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3008670/f37c8d4b20246f02005c4388ea770de55386aa11/capsule_616x353.jpg?t=1738434588"/>
+                <p>Poppy Play Time 4</p>
+                <p>ціна 415грн</p>
+                  <button>купити</button>
+                  </article>
+                  </section>
+      <h2>Топ 5 продажів</h2>
+      <section>
+         <article>
+            <img class="game7" src="https://cdn1.epicgames.com/offer/602a0ef0aceb46cca62445439661d712/EGS_STALKER2HeartofChornobyl_GSCGameWorld_S1_2560x1440-62f2f7def1bae0e3255e49fc7177adaf"/>
+            <p>S.T.A.L.K.E.R.2</p>
+            <p>1400грн</p>
+            <button>купити</button>
+            </article>
+            <article>
+      <img class="game1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBYTY6fubCGS0hcxIc3_9jbG973emtsQ4vO42dAy1RO1WuuRCWSU_9fKzByCBYH69liRY&usqp=CAU"/>
+      <p>Call of Duty Black ops 6</p>
+      <p>ціна 3300грн</p>
+      <button>купити</button>
+      </article>
+        <article>
+      <img class="game2" src="https://cdn1.epicgames.com/b30b6d1b4dfd4dcc93b5490be5e094e5/offer/RDR2476298253_Epic_Games_Wishlist_RDR2_2560x1440_V01-2560x1440-2a9ebe1f7ee202102555be202d5632ec.jpg"/>
+      <p>Red Dead Redemption 2</p>
+      <p>ціна 2600грн</p>
+       <button>купити</button>
+      </article>
+      <article>
+              <img class="game10" src="https://upload.wikimedia.org/wikipedia/en/8/8d/Indiana_Jones_and_the_Great_Circle-box_art.jpg"/>
+              <p>Indiana jones and the great circle</p>
+              <p>ціна 2449</p>
+              <button>купити</button>
+            </article>
+            <article>
+      <img class="game3" src="https://i.ytimg.com/vi/5VP6bjlger8/maxresdefault.jpg"/>
+      <p>Kingdom Come Deliverance 2</p>
+      <p>ціна 1600грн</p>
+       <button>купити</button>
+      </article>
+      </section>
+      <h3>Ігри з найвищими оцінками</h3>
+      <section>
+      <article> 
+      <img class="game1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBYTY6fubCGS0hcxIc3_9jbG973emtsQ4vO42dAy1RO1WuuRCWSU_9fKzByCBYH69liRY&usqp=CAU"/>
+      <p>Call of Duty Black ops 6</p>
+      <p>ціна 3300грн</p>
+      <button>купити</button>
+      </article>
+       <article>
+            <img class="game7" src="https://cdn1.epicgames.com/offer/602a0ef0aceb46cca62445439661d712/EGS_STALKER2HeartofChornobyl_GSCGameWorld_S1_2560x1440-62f2f7def1bae0e3255e49fc7177adaf"/>
+            <p>S.T.A.L.K.E.R.2</p>
+            <p>1400грн</p>
+            <button>купити</button>
+            </article>
+            <article>
+        <img class="game5" src="https://upload.wikimedia.org/wikipedia/ru/0/0b/Call_Of_Duty_MW3_2023.jpg"/>
+        <p>Call of duty Modern Warfare 3</p>
+          <p>ціна 2449грн</p>
+           <button>купити</button>
+          </article>
+           <article>
+              <img class="game8" src="https://upload.wikimedia.org/wikipedia/ru/c/c8/GTAV_Official_Cover_Art.jpg"/>
+              <p>GTA5</p>
+              <p>ціна 630грн</p>
+              <button>купити</button>
+            </article>
+            <article>
+              <img class="game10" src="https://upload.wikimedia.org/wikipedia/en/8/8d/Indiana_Jones_and_the_Great_Circle-box_art.jpg"/>
+              <p>Indiana jones and the great circle</p>
+              <p>ціна 2449</p>
+              <button>купити</button>
+            </article>
+            <article>
+      <img class="game3" src="https://i.ytimg.com/vi/5VP6bjlger8/maxresdefault.jpg"/>
+      <p>Kingdom Come Deliverance 2</p>
+      <p>ціна 1600грн</p>
+       <button>купити</button>
+      </article>
+      </section>
+      <section class="about">
+      <h4> про нас </h4>
+      <p>Цей сайт пропонує вам найкращі та новіші ігри усі ціни взято з стіму 01.03.2025 оцінки та топ продажі також взято з стіму.Розважайтесь.</p>
+      <iframe width="350" height="300" src="https://www.youtube.com/embed/R9wayqAXifk" title="50 BEST PC Games of 2024 [4K]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </section>
+    </main>
+    <footer>
+      <img src="https://yt3.googleusercontent.com/Bg5wS82KGryRmcsn1YbPThtbXoTmj2XJ9_7LmuE2RF6wbKJBkovfRypbSz6UD3gEu_nHiwGZtQ=s900-c-k-c0x00ffffff-no-rj"/>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/800px-Telegram_logo.svg.png"/>
+    </footer>
+ </body>   
+</html>
